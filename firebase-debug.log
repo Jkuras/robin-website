@@ -1,0 +1,375 @@
+[debug] [2018-10-08T16:04:51.628Z] ----------------------------------------------------------------------
+[debug] [2018-10-08T16:04:51.631Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-10-08T16:04:51.631Z] CLI Version:   3.18.5
+[debug] [2018-10-08T16:04:51.631Z] Platform:      win32
+[debug] [2018-10-08T16:04:51.631Z] Node Version:  v6.14.1
+[debug] [2018-10-08T16:04:51.632Z] Time:          Mon Oct 08 2018 09:04:51 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:51.632Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-10-08T16:04:51.642Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-08T16:04:51.643Z] > authorizing via signed-in user
+[debug] [2018-10-08T16:04:51.644Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-08T16:04:51.645Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+ { refresh_token: '1/EjUP7Mo9najPgxDKN7X1YNCmo9NP03RJCOTw4kVyt4U',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' }
+ Mon Oct 08 2018 09:04:51 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:52.250Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-08T16:04:52.256Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Mon Oct 08 2018 09:04:52 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:53.188Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-08T16:04:53.189Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Mon Oct 08 2018 09:04:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:53.685Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-08T16:04:53.686Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f
+
+ Mon Oct 08 2018 09:04:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:54.047Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Serving from 'G:\robin-website'...
+[info]
+[debug] [2018-10-08T16:04:54.051Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig
+
+ Mon Oct 08 2018 09:04:54 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-10-08T16:04:54.423Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-11-07T20:54:13.605Z] ----------------------------------------------------------------------
+[debug] [2018-11-07T20:54:13.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-07T20:54:13.609Z] CLI Version:   3.18.5
+[debug] [2018-11-07T20:54:13.609Z] Platform:      win32
+[debug] [2018-11-07T20:54:13.609Z] Node Version:  v6.14.1
+[debug] [2018-11-07T20:54:13.610Z] Time:          Wed Nov 07 2018 12:54:13 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:13.610Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-07T20:54:13.624Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-07T20:54:13.624Z] > authorizing via signed-in user
+[debug] [2018-11-07T20:54:13.626Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-07T20:54:13.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+ { refresh_token: '1/EjUP7Mo9najPgxDKN7X1YNCmo9NP03RJCOTw4kVyt4U',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' }
+ Wed Nov 07 2018 12:54:13 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:13.961Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-07T20:54:13.970Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 12:54:13 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:14.444Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-07T20:54:14.445Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Wed Nov 07 2018 12:54:14 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:15.815Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-07T20:54:15.816Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 12:54:15 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:16.180Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Serving from 'G:\robin-website'...
+[info]
+[debug] [2018-11-07T20:54:16.182Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig
+
+ Wed Nov 07 2018 12:54:16 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-07T20:54:16.685Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-11-08T02:08:26.336Z] ----------------------------------------------------------------------
+[debug] [2018-11-08T02:08:26.340Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-08T02:08:26.340Z] CLI Version:   3.18.5
+[debug] [2018-11-08T02:08:26.340Z] Platform:      win32
+[debug] [2018-11-08T02:08:26.340Z] Node Version:  v6.14.1
+[debug] [2018-11-08T02:08:26.342Z] Time:          Wed Nov 07 2018 18:08:26 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:26.342Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-08T02:08:26.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-08T02:08:26.370Z] > authorizing via signed-in user
+[debug] [2018-11-08T02:08:26.373Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-08T02:08:26.374Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+ { refresh_token: '1/EjUP7Mo9najPgxDKN7X1YNCmo9NP03RJCOTw4kVyt4U',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' }
+ Wed Nov 07 2018 18:08:26 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:26.624Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:08:26.630Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 18:08:26 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:27.096Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:08:27.097Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Wed Nov 07 2018 18:08:27 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:27.487Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:08:27.488Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 18:08:27 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:27.949Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Serving from 'G:\robin-website'...
+[info]
+[debug] [2018-11-08T02:08:27.951Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig
+
+ Wed Nov 07 2018 18:08:27 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:08:28.424Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-11-08T02:23:13.147Z] ----------------------------------------------------------------------
+[debug] [2018-11-08T02:23:13.150Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-08T02:23:13.150Z] CLI Version:   3.18.5
+[debug] [2018-11-08T02:23:13.150Z] Platform:      win32
+[debug] [2018-11-08T02:23:13.150Z] Node Version:  v6.14.1
+[debug] [2018-11-08T02:23:13.151Z] Time:          Wed Nov 07 2018 18:23:13 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:13.151Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-08T02:23:13.171Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-08T02:23:13.172Z] > authorizing via signed-in user
+[debug] [2018-11-08T02:23:13.174Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 18:23:13 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:14.065Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:23:14.066Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Wed Nov 07 2018 18:23:14 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:14.852Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Deploying to 'robin-website-1957f'...
+[info]
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-08T02:23:15.215Z] >>> HTTP REQUEST PUT https://robin-website-1957f.firebaseio.com/.settings/rules.json?dryRun=true
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ Wed Nov 07 2018 18:23:15 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:20.132Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database robin-website-1957f is valid
+[debug] [2018-11-08T02:23:20.133Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/robin-website-1957f
+
+ Wed Nov 07 2018 18:23:20 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:21.025Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-11-08T02:23:21.027Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f:test
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:23:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:21.813Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-11-08T02:23:21.816Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f/rulesets
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:23:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:23:22.467Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:23:22.467Z] [rules] created ruleset projects/robin-website-1957f/rulesets/42b8c427-b9cc-4d7f-99be-14100501dabe
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-11-08T02:23:23.876Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/robin-website-1957f/uploads/-LQl7O1iWnlCBap5ydz4?fileCount=24&message=
+
+ Wed Nov 07 2018 18:23:23 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:17.082Z] <<< HTTP RESPONSE 410
+[debug] [2018-11-08T02:24:17.084Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2018-11-08T02:24:17.085Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:10:12)
+    at Request._callback (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:47:25)
+    at Request.self.callback (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1157:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1079:12)
+    at IncomingMessage.g (events.js:292:16)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] [2018-11-08T02:24:24.514Z] ----------------------------------------------------------------------
+[debug] [2018-11-08T02:24:24.517Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-08T02:24:24.517Z] CLI Version:   3.18.5
+[debug] [2018-11-08T02:24:24.517Z] Platform:      win32
+[debug] [2018-11-08T02:24:24.517Z] Node Version:  v6.14.1
+[debug] [2018-11-08T02:24:24.518Z] Time:          Wed Nov 07 2018 18:24:24 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:24.518Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-08T02:24:24.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-08T02:24:24.529Z] > authorizing via signed-in user
+[debug] [2018-11-08T02:24:24.531Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 18:24:24 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:24.995Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:24:24.996Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Wed Nov 07 2018 18:24:24 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:25.362Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Deploying to 'robin-website-1957f'...
+[info]
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-08T02:24:25.724Z] >>> HTTP REQUEST PUT https://robin-website-1957f.firebaseio.com/.settings/rules.json?dryRun=true
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ Wed Nov 07 2018 18:24:25 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:26.157Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database robin-website-1957f is valid
+[debug] [2018-11-08T02:24:26.158Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/robin-website-1957f
+
+ Wed Nov 07 2018 18:24:26 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:26.620Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-11-08T02:24:26.621Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f:test
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:24:26 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:27.070Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-11-08T02:24:27.072Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f/rulesets
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:24:27 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:24:27.646Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:24:27.646Z] [rules] created ruleset projects/robin-website-1957f/rulesets/fc8fe555-62ac-4a16-a906-52296fca3350
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-11-08T02:24:29.018Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/robin-website-1957f/uploads/-LQl7cyPiyuSHW9bCgcg?fileCount=24&message=
+
+ Wed Nov 07 2018 18:24:29 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:26:18.686Z] Error: write ECONNRESET
+    at exports._errnoException (util.js:1020:11)
+    at WriteWrap.afterWrite (net.js:812:14)
+[error] 
+[error] Error: Server Error. write ECONNRESET
+[debug] [2018-11-08T02:27:19.017Z] ----------------------------------------------------------------------
+[debug] [2018-11-08T02:27:19.020Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-08T02:27:19.020Z] CLI Version:   3.18.5
+[debug] [2018-11-08T02:27:19.020Z] Platform:      win32
+[debug] [2018-11-08T02:27:19.020Z] Node Version:  v6.14.1
+[debug] [2018-11-08T02:27:19.021Z] Time:          Wed Nov 07 2018 18:27:19 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:19.021Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-08T02:27:19.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-08T02:27:19.032Z] > authorizing via signed-in user
+[debug] [2018-11-08T02:27:19.034Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/robin-website-1957f
+
+ Wed Nov 07 2018 18:27:19 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:19.479Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:27:19.480Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/robin-website-1957f/tokens
+
+ Wed Nov 07 2018 18:27:19 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:19.864Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Deploying to 'robin-website-1957f'...
+[info]
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-08T02:27:20.230Z] >>> HTTP REQUEST PUT https://robin-website-1957f.firebaseio.com/.settings/rules.json?dryRun=true
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ Wed Nov 07 2018 18:27:20 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:21.148Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database robin-website-1957f is valid
+[debug] [2018-11-08T02:27:21.150Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/robin-website-1957f
+
+ Wed Nov 07 2018 18:27:21 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:22.004Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-11-08T02:27:22.005Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f:test
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:27:22 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:23.256Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-11-08T02:27:23.258Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f/rulesets
+ { source: { files: [ [Object] ] } }
+ Wed Nov 07 2018 18:27:23 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:27:23.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:27:23.927Z] [rules] created ruleset projects/robin-website-1957f/rulesets/abc32a8c-4d06-48b8-9036-0220c290eea1
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-11-08T02:27:25.295Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/robin-website-1957f/uploads/-LQl8IzJcYhB4JjKan0X?fileCount=24&message=
+
+ Wed Nov 07 2018 18:27:25 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:28:18.937Z] <<< HTTP RESPONSE 410
+[debug] [2018-11-08T02:28:18.937Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2018-11-08T02:28:18.939Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:10:12)
+    at Request._callback (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:47:25)
+    at Request.self.callback (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1157:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1079:12)
+    at IncomingMessage.g (events.js:292:16)
+[error]
+[error] Error: An unexpected error has occurred.
+[debug] [2018-11-08T02:30:15.855Z] ----------------------------------------------------------------------
+[debug] [2018-11-08T02:30:15.857Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-11-08T02:30:15.857Z] CLI Version:   6.0.1
+[debug] [2018-11-08T02:30:15.857Z] Platform:      win32
+[debug] [2018-11-08T02:30:15.857Z] Node Version:  v6.14.1
+[debug] [2018-11-08T02:30:15.858Z] Time:          Wed Nov 07 2018 18:30:15 GMT-0800 (Pacific Standard Time)
+[debug] [2018-11-08T02:30:15.858Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-08T02:30:15.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-08T02:30:15.870Z] > authorizing via signed-in user
+[debug] [2018-11-08T02:30:15.870Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2018-11-08T02:30:15.872Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions
+
+[debug] [2018-11-08T02:30:16.550Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:30:16.552Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/robin-website-1957f
+
+[debug] [2018-11-08T02:30:16.897Z] <<< HTTP RESPONSE 200
+[info]
+[info] === Deploying to 'robin-website-1957f'...
+[info]
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-08T02:30:16.901Z] >>> HTTP REQUEST PUT https://robin-website-1957f.firebaseio.com/.settings/rules.json?dryRun=true
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2018-11-08T02:30:17.269Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database robin-website-1957f is valid
+[debug] [2018-11-08T02:30:17.269Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/robin-website-1957f
+
+[debug] [2018-11-08T02:30:17.799Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-11-08T02:30:17.801Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f:test
+
+[debug] [2018-11-08T02:30:18.272Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[debug] [2018-11-08T02:30:18.273Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/robin-website-1957f/versions
+
+[debug] [2018-11-08T02:30:19.920Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-11-08T02:30:19.920Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/robin-website-1957f/rulesets
+
+[debug] [2018-11-08T02:30:20.385Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:30:20.385Z] [rules] created ruleset projects/robin-website-1957f/rulesets/9148cfa9-b8f1-4532-bd93-57b865ead8d0
+[info] i  hosting[robin-website-1957f]: beginning deploy...
+[info] i  hosting[robin-website-1957f]: found 22 files in public
+[debug] [2018-11-08T02:30:20.404Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2018-11-08T02:30:21.107Z] [hosting] hash cache [cHVibGlj] stored for 22 files
+[debug] [2018-11-08T02:30:21.107Z] [hosting][hash queue][FINAL]
+[debug] [2018-11-08T02:30:21.108Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/robin-website-1957f/versions/b64854e394ce9357:populateFiles
+ <request body omitted>
+[debug] [2018-11-08T02:30:21.986Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-08T02:30:22.002Z] [hosting][populate queue][FINAL]
+[debug] [2018-11-08T02:30:22.002Z] [hosting] uploads queued: 22
+[info] i  hosting: uploading new files [0/22] (0%)

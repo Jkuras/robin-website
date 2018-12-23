@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robin Dalynn Jazz</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.5.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.5.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel='stylesheet' href='css/font.css'/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <header>
+      <h5 class='center'>This is where you can add new events, images, and upload audio.<br> If you want to add new videos to the site, send them to me at j.l.kuras95@gmail.com!</h5>
+    </header>
+
+    <main>
+      <div id='image-select-modal' class='modal'>
+        <div class='row'>
+          <div class='col s12'>
+            <h6>Click on an image to edit or remove it!</h6>
+          </div>
+          <div id='image-select-area' class='row'>
+
+          </div>
+        </div>
+      </div>
+      <div id='audio-select-modal' class='modal'>
+        <div class='row'>
+          <div id='audio-select-area' class='row'>
+
+          </div>
+        </div>
+      </div>
+      <div class='row container' id='sign-in'>
+        <p>First thing you've got to do is sign in.</p>
+        <form id='login-form' class='col s12' action='' onsubmit="signIn(); return false">
+          <div class="col s12 m6">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+             <i class="material-icons right">log in</i>
+           </button>
+        </form>
+      </div>
+      <div class="row" id='signed-in'>
+        <div class='col s6 center'>
+          <h6>You are Signed In!</h6>
+        </div>
+        <div class='col s6 center'>
+          <div class='btn' id="sign-out">sign out</div>
+        </div>
+        <div class="col s12 center">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab col s3"><a class="active" href="#test1">Events</a></li>
+            <li class="tab col s3"><a  href="#test2">Images</a></li>
+            <li class="tab col s3 "><a href="#test3">Audio</a></li>
+          </ul>
+        </div>
+        <div id='test1' class='col s12 grey '>
+          <h5>Add/Edit Events</h5>
+          <div class='col s12 card' style='padding:5px'>
+            <h6>Add Event</h6>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="name" type="text" class="validate">
+                <label for="name">Event Name</label>
+              </div>
+            </div>
+            <div class="col s6 m3">
+              <div class="input-field col s12">
+                <input id="start-time" type="text" class="timepicker">
+                <label for="start-time">Start Time (X:XX XM)</label>
+              </div>
+            </div>
+            <div class="col s6 m3">
+              <div class="input-field col s12">
+                <input id="end-time" type="text" class="timepicker">
+                <label for="end-time">End Time (X:XX XM)</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="description" type="text" class="validate">
+                <label for="description">Event Description</label>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input id="date" type="text" class="datepicker">
+                <label for="date">Event Date (YYYY-MM-DD)</label>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input id="venue" type="text" class="validate">
+                <label for="venue">Venue Name</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate">
+                <label for="address">Street Address</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="city" type="text" class="validate">
+                <label for="city">City</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="state" type="text" class="validate">
+                <label for="state">State</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="zip" type="text" class="validate">
+                <label for="zip">Zip Code</label>
+              </div>
+            </div>
+            <div class='col s12 center'>
+              <div class='btn' id='add-event'>Add Event</div>
+            </div>
+          </div>
+          <div class='col s12 card' style='padding:5px'>
+            <h6>Edit Event</h6>
+            <div class='col s12'>
+              <div class="input-field col s12 edit-select">
+                <select id='edit-select1'>
+
+                </select>
+                <label>Select Event</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-name" type="text" class="validate">
+                <label class='active' for="edit-name">Event Name</label>
+              </div>
+            </div>
+            <div class="col s6 m3">
+              <div class="input-field col s12">
+                <input id="edit-start-time" type="text" class="timepicker">
+                <label class='active' for="edit-start-time">Start Time (X:XX XM)</label>
+              </div>
+            </div>
+            <div class="col s6 m3">
+              <div class="input-field col s12">
+                <input id="edit-end-time" type="text" class="timepicker">
+                <label class='active' for="edit-end-time">End Time (X:XX XM)</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-description" type="text" class="validate">
+                <label class='active' for="edit-description">Event Description</label>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input id="edit-date" type="text" class="datepicker">
+                <label class='active' for="edit-date">Event Date (YYYY-MM-DD)</label>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input id="edit-venue" type="text" class="validate">
+                <label class='active' for="edit-venue">Venue Name</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-address" type="text" class="validate">
+                <label class='active' for="edit-address">Street Address</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-city" type="text" class="validate">
+                <label class='active' for="edit-city">City</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-state" type="text" class="validate">
+                <label class='active' for="edit-state">State</label>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="input-field col s12">
+                <input id="edit-zip" type="text" class="validate">
+                <label class='active' for="edit-zip">Zip Code</label>
+              </div>
+            </div>
+            <div class='col s6 center'>
+              <div class='btn' id='edit-event'>Edit Event</div>
+            </div>
+            <div class='col s6 center'>
+              <div class='btn' id='remove-event'>Remove Event</div>
+            </div>
+          </div>
+        </div>
+        <div id="test2" class="col s12 grey">
+          <div class='col s12'>
+            <h5>Add/Remove Images</h5>
+          </div>
+          <div class='col s12'>
+            <div class='col s12 card' style='padding:5px'>
+              <h6>Add Image</h6>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="name2" type="text" class="validate">
+                    <label for="name2">Image Name</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="date2" type="text" class="datepicker">
+                    <label for="date2">Image Date (YYYY-MM-DD)</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <textarea id="description2" type="text" class="materialize-textarea  validate"></textarea>
+                    <label for="description2">Image Description</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="input-field col s12 edit-select">
+                  <select id='edit-select2'>
+
+                  </select>
+                  <label>Select Image Event</label>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input id='image-file' type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input id='image-file-path' class="file-path validate" type="text" placeholder="Upload image">
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 center'>
+                <div class='btn' id='add-image'>Add Image</div>
+              </div>
+            </div>
+          </div>
+          <div class='col s12'>
+            <div class='col s12 card' style='padding:5px'>
+              <h6>Edit/Remove Image</h6>
+              <div class='col s12'>
+                <div class=" col s12 edit-select">
+                  <div class='btn modal-trigger' href='#image-select-modal'>Select Image</div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="name3" type="text" class="validate">
+                    <label for="name3">Image Name</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="date3" type="text" class="datepicker">
+                    <label for="date3">Image Date (YYYY-MM-DD)</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <textarea id="description3" type="text" class="materialize-textarea  validate"></textarea>
+                    <label for="description3">Image Description</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="input-field col s12 edit-select">
+                  <select id='edit-select4'>
+
+                  </select>
+                  <label>Select Image Event</label>
+                </div>
+              </div>
+              <div class='col s6 center'>
+                <div class='btn' id='edit-image'>Edit Image</div>
+              </div>
+              <div class='col s6 center'>
+                <div class='btn' id='remove-image'>Remove Image</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test3" class="col s12 grey">
+          <div class='col s12'>
+            <h5>Add/Remove Audio</h5>
+          </div>
+          <div class='col s12'>
+            <div class='col s12 card' style='padding:5px'>
+              <h6>Add Audio</h6>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="name4" type="text" class="validate">
+                    <label for="name4">Audio Name</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="band4" type="text" class="validate">
+                    <label for="band4">Audio Band</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="date4" type="text" class="datepicker">
+                    <label for="date4">Audio Date (YYYY-MM-DD)</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <textarea id="description4" type="text" class="materialize-textarea  validate"></textarea>
+                    <label for="description4">Audio Description</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="input-field col s12 edit-select">
+                  <select id='edit-select6'>
+
+                  </select>
+                  <label>Select Audio Event</label>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input id='audio-file' type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input id='audio-file-path' class="file-path validate" type="text" placeholder="Upload audio">
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 center'>
+                <div class='btn' id='add-audio'>Add Audio</div>
+              </div>
+            </div>
+          </div>
+          <div class='col s12'>
+            <div class='col s12 card' style='padding:5px'>
+              <h6>Edit/Remove Audio</h6>
+              <div class='col s12'>
+                <div class=" col s12 edit-select">
+                  <div class='btn modal-trigger' href='#audio-select-modal'>Select Audio</div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="name5" type="text" class="validate">
+                    <label for="name5">Audio Name</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="band5" type="text" class="validate">
+                    <label for="band5">Audio Band</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <input id="date5" type="text" class="datepicker">
+                    <label for="date5">Audio Date (YYYY-MM-DD)</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12 m6'>
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <textarea id="description5" type="text" class="materialize-textarea  validate"></textarea>
+                    <label for="description5">Audio Description</label>
+                  </div>
+                </div>
+              </div>
+              <div class='col s12'>
+                <div class="input-field col s12 edit-select">
+                  <select id='edit-select5'>
+
+                  </select>
+                  <label>Select Audio Event</label>
+                </div>
+              </div>
+              <div class='col s6 center'>
+                <div class='btn' id='edit-audio'>Edit Audio</div>
+              </div>
+              <div class='col s6 center'>
+                <div class='btn' id='remove-audio'>Remove Audio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class='row black white-text' style='margin:0px'>
+        <div class='col s6'>
+          <p>This website was made by Jesse Kuras. Copyright December 2018. Contact: j.l.kuras95@gmail.com</p>
+        </div>
+        <div class='col s6 right-align'>
+          <a href="/backpage"><p>Are you Robin? Click Here!</p></a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js'></script>
+    <script src='js/moment.min.js'></script>
+    <script src='js/fullcalendar.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src='backpage.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    </script>
+  </body>
+</html>

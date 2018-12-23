@@ -373,3 +373,173 @@
 [debug] [2018-11-08T02:30:22.002Z] [hosting][populate queue][FINAL]
 [debug] [2018-11-08T02:30:22.002Z] [hosting] uploads queued: 22
 [info] i  hosting: uploading new files [0/22] (0%)
+[debug] [2018-12-18T20:41:33.965Z] ----------------------------------------------------------------------
+[debug] [2018-12-18T20:41:33.967Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-18T20:41:33.968Z] CLI Version:   6.0.1
+[debug] [2018-12-18T20:41:33.968Z] Platform:      win32
+[debug] [2018-12-18T20:41:33.968Z] Node Version:  v6.14.1
+[debug] [2018-12-18T20:41:33.969Z] Time:          Tue Dec 18 2018 12:41:33 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-18T20:41:33.969Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-18T20:41:33.983Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-18T20:41:33.983Z] > authorizing via signed-in user
+[debug] [2018-12-18T20:41:33.984Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-18T20:41:33.985Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-18T20:41:33.986Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-18T20:41:34.360Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-18T20:41:34.369Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-18T20:41:34.679Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-18T20:41:34.680Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-18T20:41:34.942Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-18T20:41:34.943Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-18T20:41:35.257Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-18T20:53:59.811Z] ----------------------------------------------------------------------
+[debug] [2018-12-18T20:53:59.813Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-18T20:53:59.814Z] CLI Version:   6.0.1
+[debug] [2018-12-18T20:53:59.814Z] Platform:      win32
+[debug] [2018-12-18T20:53:59.814Z] Node Version:  v6.14.1
+[debug] [2018-12-18T20:53:59.815Z] Time:          Tue Dec 18 2018 12:53:59 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-18T20:53:59.815Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-18T20:53:59.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-18T20:53:59.826Z] > authorizing via signed-in user
+[debug] [2018-12-18T20:53:59.827Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-18T20:53:59.829Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-18T20:54:00.064Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-18T20:54:00.065Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-18T20:54:00.707Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-18T20:54:00.708Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-18T20:54:01.411Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-19T01:15:30.213Z] ----------------------------------------------------------------------
+[debug] [2018-12-19T01:15:30.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-19T01:15:30.216Z] CLI Version:   6.0.1
+[debug] [2018-12-19T01:15:30.216Z] Platform:      win32
+[debug] [2018-12-19T01:15:30.216Z] Node Version:  v6.14.1
+[debug] [2018-12-19T01:15:30.217Z] Time:          Tue Dec 18 2018 17:15:30 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-19T01:15:30.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-19T01:15:30.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-19T01:15:30.238Z] > authorizing via signed-in user
+[debug] [2018-12-19T01:15:30.238Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-19T01:15:30.240Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-19T01:15:30.240Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-19T01:15:30.387Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-19T01:15:30.393Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-19T01:15:30.598Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-19T01:15:30.599Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-19T01:15:31.018Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-19T01:15:31.023Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-19T01:15:31.369Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-19T23:28:52.968Z] ----------------------------------------------------------------------
+[debug] [2018-12-19T23:28:52.971Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-19T23:28:52.971Z] CLI Version:   6.0.1
+[debug] [2018-12-19T23:28:52.971Z] Platform:      win32
+[debug] [2018-12-19T23:28:52.971Z] Node Version:  v6.14.1
+[debug] [2018-12-19T23:28:52.972Z] Time:          Wed Dec 19 2018 15:28:52 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-19T23:28:52.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-19T23:28:52.987Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-19T23:28:52.988Z] > authorizing via signed-in user
+[debug] [2018-12-19T23:28:52.988Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-19T23:28:52.990Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-19T23:28:52.990Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-19T23:28:53.770Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-19T23:28:53.777Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-19T23:28:54.933Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-19T23:28:54.935Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-19T23:28:55.194Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-19T23:28:55.196Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-19T23:28:55.637Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-21T20:43:33.503Z] ----------------------------------------------------------------------
+[debug] [2018-12-21T20:43:33.503Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-21T20:43:33.503Z] CLI Version:   6.0.1
+[debug] [2018-12-21T20:43:33.503Z] Platform:      win32
+[debug] [2018-12-21T20:43:33.503Z] Node Version:  v6.14.1
+[debug] [2018-12-21T20:43:33.503Z] Time:          Fri Dec 21 2018 12:43:33 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-21T20:43:33.503Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-21T20:43:33.550Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-21T20:43:33.550Z] > authorizing via signed-in user
+[debug] [2018-12-21T20:43:33.550Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-21T20:43:33.550Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-21T20:43:33.550Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-21T20:43:34.019Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-21T20:43:34.019Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-21T20:43:34.753Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-21T20:43:34.753Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-21T20:43:35.487Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-21T20:43:35.487Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-21T20:43:36.722Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-21T21:56:14.983Z] ----------------------------------------------------------------------
+[debug] [2018-12-21T21:56:14.986Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesse Lee Kuras\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-21T21:56:14.986Z] CLI Version:   6.0.1
+[debug] [2018-12-21T21:56:14.986Z] Platform:      win32
+[debug] [2018-12-21T21:56:14.986Z] Node Version:  v6.14.1
+[debug] [2018-12-21T21:56:14.987Z] Time:          Fri Dec 21 2018 13:56:14 GMT-0800 (Pacific Standard Time)
+[debug] [2018-12-21T21:56:14.987Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-21T21:56:14.999Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-21T21:56:15.000Z] > authorizing via signed-in user
+[debug] [2018-12-21T21:56:15.000Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2018-12-21T21:56:15.002Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-21T21:56:15.002Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-21T21:56:15.290Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-21T21:56:15.297Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2018-12-21T21:56:15.515Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-21T21:56:15.516Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2018-12-21T21:56:16.183Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\robin-website'...
+[info] 
+[debug] [2018-12-21T21:56:16.188Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-21T21:56:16.941Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

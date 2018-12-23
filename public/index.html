@@ -65,7 +65,7 @@
         </div>
 
       </div>
-      <div class="row grey">
+      <div class="row grey" style='padding-bottom:15px; margin-bottom:0px'>
        <div id="test1" class="col s12">
          <div class='col s12 m6 center'>
            <h4 class='celestina' style='color:#e6e6fa'>Event Spotlight</h4>
@@ -126,11 +126,53 @@
          </div>
 
        </div>
-       <div id="test4" class="col s12">This page is under construction and will be done soon!</div>
+       <div id="test4" class="col s12">
+
+           <div class='col s12 center' style='color:#e6e6fa'>
+             <div class='celestina'>
+               <h4>Photos of Robyn Dalynn</h4>
+             </div>
+           </div>
+           <div class='col s12 center'>
+             <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="loading.gif"></a>
+                <a class="carousel-item" href="#two!"><img src="loading.gif"></a>
+                <a class="carousel-item" href="#three!"><img src="loading.gif"></a>
+                <a class="carousel-item" href="#four!"><img src="loading.gif"></a>
+                <a class="carousel-item" href="#five!"><img src="loading.gif"></a>
+              </div>
+           </div>
+           <div class='col s12 m8 offset-m2 white'>
+             <div class='col s6 m3 orange' id='image-col-0' style='margin:0px; padding:0px; height:15px'>
+             </div>
+             <div class='col s6 m3 red' id='image-col-1' style='margin:0px; padding:0px; height:15px'>
+             </div>
+             <div class='col s6 m3 orange' id='image-col-2' style='margin:0px; padding:0px; height:15px'>
+             </div>
+             <div class='col s6 m3 red' id='image-col-3' style='margin:0px; padding:0px; height:15px'>
+             </div>
+           </div>
+           <div class='col s12 center' style='color:#e6e6fa'>
+             <div class='celestina'>
+               <h4>Recordings of Robyn Dalynn</h4>
+             </div>
+           </div>
+
+           <div class='col s12 m8 offset-m2 white' id='audio_area' style='height:15px'>
+           </div>
+       </div>
      </div>
     </main>
 
     <footer>
+      <div class='row black white-text' style='margin:0px'>
+        <div class='col s6'>
+          <p>This website was made by Jesse Kuras. Copyright December 2018. Contact: j.l.kuras95@gmail.com</p>
+        </div>
+        <div class='col s6 right-align'>
+          <a href="/backpage"><p>Are you Robin? Click Here!</p></a>
+        </div>
+      </div>
     </footer>
 
 
@@ -144,119 +186,7 @@
     <script src='js/fullcalendar.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
-    <script>
-    $(document).ready(function(){
-      $('.tabs').tabs();
-      $('.modal').modal();
-      var wavesurfer = WaveSurfer.create({
-          container: '#waveform',
-          waveColor: 'violet',
-          progressColor: 'purple',
-          scrollParent:false,
-          height: 60,
-          hideScrollbar: true,
-          fillParent: true
-      });
-      wavesurfer.load('audio/fever.mp3')
-      $('#play-1').click(function(){
-        wavesurfer.play()
-      })
-      $('#pause-1').click(function(){
-        wavesurfer.pause()
-      })
-      var wavesurfer2 = WaveSurfer.create({
-          container: '#waveform2',
-          waveColor: 'violet',
-          progressColor: 'purple',
-          scrollParent:false,
-          height: 60,
-          hideScrollbar: true,
-          fillParent: true
-      });
-      wavesurfer2.load('audio/east_of_the_sun.mp3')
-      $('#play-2').click(function(){
-        wavesurfer2.play()
-      })
-      $('#pause-2').click(function(){
-        wavesurfer2.pause()
-      })
-      $('#home-cal').fullCalendar({
-        eventClick: function(calEvent, jsEvent, view){populateEventModal(calEvent)},
-        header : false,
-        defaultView:'listMonth',
-        events : [
-          {
-            title: 'Trio of Three at Zola\'s Cafe',
-            start: '2018-11-08T12:30:00',
-            end: '2018-11-08T16:30:00',
-            addDay: false,
-            location: {
-              name: "Zola's Cafe",
-              streetAddress: "1234 Test Street",
-              cityState: "Auburn, WA",
-              zip: "98444"
-            },
-            description: "Take 7 plays again with Robin Dalynn with lovely eats and drinks at the RoadHouse",
-            textColor: '#111111'
-
-          }
-        ],
-        eventColor: '#e6e6fa',
-
-      })
-      $('#calendar').fullCalendar({
-        eventClick: function(calEvent, jsEvent, view){populateEventModal(calEvent)},
-        header : {
-          left : '',
-          center : '',
-          right : ''
-        },
-        events : [
-          {
-            title: 'Trio of Three at Zola\'s Cafe',
-            start: '2018-11-08T12:30:00',
-            end: '2018-11-08T16:30:00',
-            addDay: false,
-            location: {
-              name: "Zola's Cafe",
-              streetAddress: "1234 Test Street",
-              cityState: "Auburn, WA",
-              zip: "98444"
-            },
-            description: "Take 7 plays again with Robin Dalynn with lovely eats and drinks at the RoadHouse",
-            textColor: '#111111'
-
-          }
-        ],
-        eventColor: '#e6e6fa',
-
-      })
-      function populateEventModal(calEvent){
-        var title = calEvent.title
-        var start = calEvent.start
-        var end = calEvent.end
-        var description = calEvent.description
-        var location = calEvent.location.name + '</br>' + calEvent.location.streetAddress + '</br>' + calEvent.location.cityState + ' ' + calEvent.location.zip
-        $('#event_name').html(title)
-        $('#event_time').html(parseTime(start) + '-' + parseTime(end))
-        $('#event_description').html(description)
-        $('#event_location').html(location)
-        $('#modal1').modal('open')
-      }
-      function parseTime(timeStamp){
-        console.log(timeStamp)
-        var tmp = timeStamp._i.split('T')[1]
-        var tmp2 =tmp.split(':')
-
-        if(tmp2[0] > 12){
-          var time = parseInt(tmp2[0]-12) + ':' + tmp2[1] + 'pm'
-        } else {
-          var time = tmp2[0] + ':' + tmp2[1] + 'am'
-        }
-        return time
-      }
-    });
-    </script>
+    <script src='index.js'></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥

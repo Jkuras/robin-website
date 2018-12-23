@@ -4,11 +4,22 @@
   },
   "hosting": {
     "public": "public",
+    "rewrites": [{
+      "source": "/backpage", "destination": "/backpage.html"
+    }, {
+      "source": "/**", "destination": "/index.html"
+    }],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ], "headers": [ {
+    "source": "**/*.@(jpg|png|mp3)",
+    "headers": [ {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+      } ]
+    }]
   },
   "storage": {
     "rules": "storage.rules"

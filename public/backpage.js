@@ -143,7 +143,7 @@ $(document).ready(function(){
       textColor: '#111111'
     }
 
-
+    $('#loading-modal').modal('open')
     var promise1 = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/events/' + id).set(event)
@@ -158,8 +158,11 @@ $(document).ready(function(){
         $('#edit-state').val("")
         $('#edit-zip').val("")
         M.updateTextFields()
+        $('#loading-modal').modal('close')
         resolve('Event Edited!')
       }catch{
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         reject('Error! Please Try Again!')
       }
     })
@@ -171,6 +174,7 @@ $(document).ready(function(){
     var id = $('#edit-select1').val()
     delete events[id]
 
+    $('#loading-modal').modal('open')
     var promise1 = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/events/').set(events)
@@ -185,8 +189,10 @@ $(document).ready(function(){
         $('#edit-state').val("")
         $('#edit-zip').val("")
         M.updateTextFields()
-        resolve('Event Removed!!')
+        resolve('Event Removed!')
       }catch{
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         reject('Error! Please Try Again!')
       }
     })
@@ -208,6 +214,7 @@ $(document).ready(function(){
       fileName += tmp[i]
     }
     var ext = $('#image-file-path').val().split('.')[1]
+    $('#loading-modal').modal('open')
     storage.child(date+'/'+fileName+'.'+ext).put(file).then(function(snapshot){
       var path = snapshot.metadata.fullPath
       var photoInfo = {
@@ -217,7 +224,6 @@ $(document).ready(function(){
         event: imageEvent,
         path: path
       }
-
       var id = generateCode(5, 'abcderfgABCDEFG1234567890')
       var promise1 = new Promise(function(resolve, reject){
         try {
@@ -230,8 +236,11 @@ $(document).ready(function(){
           $('#edit-select2').val('')
           $('#edit-select2').formSelect()
           M.updateTextFields()
+          $('#loading-modal').modal('close')
           resolve('Image Uploaded!')
         } catch {
+          $('#loading-modal').modal('close')
+          $('#error-modal').modal('open')
           reject('Error! Please Try Again!')
         }
       })
@@ -247,6 +256,7 @@ $(document).ready(function(){
     images[id].description = $('#description3').val()
     images[id].date = $('#date3').val()
     images[id].event = $('#edit-select4').val()
+    $('#loading-modal').modal('open')
     var promise = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/images').set(images)
@@ -256,10 +266,12 @@ $(document).ready(function(){
         $('#edit-select4').val("")
         M.updateTextFields()
         $('#edit-select4').formSelect()
-
+        $('#loading-modal').modal('close')
         resolve('Image Edited!')
       } catch {
         M.toast({html: 'Error! Please Try Again!'})
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         reject('Error! Please Try Again!')
       }
     })
@@ -271,6 +283,7 @@ $(document).ready(function(){
     var id = selectedImage
     var image = images[id]
     delete images[id]
+    $('#loading-modal').modal('open')
     var promise = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/images').set(images)
@@ -280,8 +293,11 @@ $(document).ready(function(){
         $('#edit-select4').val("")
         M.updateTextFields()
         $('#edit-select4').formSelect()
+        $('#loading-modal').modal('close')
         resolve('Image Removed!')
       } catch {
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         M.toast({html: 'Error! Please Try Again!'})
         reject('Error! Please Try Again!')
       }
@@ -305,7 +321,7 @@ $(document).ready(function(){
     }
 
     var ext = $('#audio-file-path').val().split('.')[1]
-
+    $('#loading-modal').modal('open')
     storage.child(date+'/'+fileName+'.'+ext).put(file).then(function(snapshot){
       var path = snapshot.metadata.fullPath
       var audioInfo = {
@@ -330,8 +346,12 @@ $(document).ready(function(){
           $('#edit-select6').val('')
           $('#edit-select6').formSelect()
           M.updateTextFields()
+          $('#loading-modal').modal('close')
+
           resolve('Audio Uploaded!')
         } catch {
+          $('#loading-modal').modal('close')
+          $('#error-modal').modal('open')
           reject('Error! Please Try Again!')
         }
       })
@@ -348,6 +368,7 @@ $(document).ready(function(){
     audio[id].date = $('#date5').val()
     audio[id].event = $('#edit-select5').val()
     audio[id].band = $('#band5').val()
+    $('#loading-modal').modal('open')
     var promise = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/audio').set(audio)
@@ -358,8 +379,11 @@ $(document).ready(function(){
         $('#edit-select5').val("")
         M.updateTextFields()
         $('#edit-select5').formSelect()
+        $('#loading-modal').modal('close')
         resolve('Audio Edited!')
       } catch {
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         M.toast({html: 'Error! Please Try Again!'})
         reject('Error! Please Try Again!')
       }
@@ -372,6 +396,7 @@ $(document).ready(function(){
     var id = selectedAudio
     var image = images[id]
     delete audio[id]
+    $('#loading-modal').modal('open')
     var promise = new Promise(function(resolve, reject){
       try{
         db.ref('siteInfo/audio').set(audio)
@@ -381,8 +406,11 @@ $(document).ready(function(){
         var event = $('#edit-select5').val("")
         M.updateTextFields()
         $('#edit-select5').formSelect()
+        $('#loading-modal').modal('close')
         resolve('Audio Removed!')
       } catch {
+        $('#loading-modal').modal('close')
+        $('#error-modal').modal('open')
         M.toast({html: 'Error! Please Try Again!'})
         reject('Error! Please Try Again!')
       }

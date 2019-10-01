@@ -26,6 +26,36 @@
 @font-face {font-family: 'Celestina';src: url('webfonts/37BCA8_0_0.eot');src: url('webfonts/37BCA8_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37BCA8_0_0.woff2') format('woff2'),url('webfonts/37BCA8_0_0.woff') format('woff'),url('webfonts/37BCA8_0_0.ttf') format('truetype');}
 
 
+@font-face {
+    font-family: 'cameo_appearance_nfregular';
+    src: url('webfonts/cameoappearancenf-webfont.woff2') format('woff2'),
+         url('webfonts/cameoappearancenf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'undergroundnf';
+    src: url('webfonts/undergroundnf-webfont.woff2') format('woff2'),
+         url('webfonts/undergroundnf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.cameo{
+  font-family: cameo_appearance_nfregular;
+  font-weight: normal;
+  font-style: normal
+}
+
+.underground{
+  font-family: undergroundnf;
+  font-weight: normal;
+  font-style: normal
+}
+
  .celestina{
    font-family: Celestina;
 	 font-weight: normal;

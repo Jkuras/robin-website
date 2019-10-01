@@ -129,7 +129,7 @@ $(document).ready(function(){
       }).catch(function(error) {
         // Handle any errors
         console.log(error)
-        M.toast({html:'Error Loading Audio!'})
+        //M.toast({html:'Error Loading Audio!'})
       });
     }
 

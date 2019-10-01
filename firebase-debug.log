@@ -1,0 +1,25 @@
+[debug] [2019-09-23T20:00:11.114Z] ----------------------------------------------------------------------
+[debug] [2019-09-23T20:00:11.117Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Melville\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2019-09-23T20:00:11.117Z] CLI Version:   5.1.1
+[debug] [2019-09-23T20:00:11.117Z] Platform:      win32
+[debug] [2019-09-23T20:00:11.117Z] Node Version:  v6.11.5
+[debug] [2019-09-23T20:00:11.118Z] Time:          Mon Sep 23 2019 13:00:11 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-09-23T20:00:11.118Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-23T20:00:11.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-23T20:00:11.130Z] > authorizing via signed-in user
+[debug] [2019-09-23T20:00:11.130Z] [iam] checking project robin-website-1957f for permissions ["firebase.projects.get"]
+[debug] [2019-09-23T20:00:11.132Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f:testIamPermissions  
+
+[debug] [2019-09-23T20:00:11.450Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-23T20:00:11.451Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/robin-website-1957f  
+ 
+[debug] [2019-09-23T20:00:11.662Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Melville\Documents\projects\robin-website'...
+[info] 
+[debug] [2019-09-23T20:00:11.664Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/656632732569/clients/_:getWebAppConfig  
+ 
+[debug] [2019-09-23T20:00:11.991Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
